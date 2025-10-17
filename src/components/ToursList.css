@@ -1,0 +1,106 @@
+.tours-list {
+  background: #f8f9fa;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.tours-list h2 {
+  font-size: 2rem;
+  color: #0b3b2e;
+  margin-bottom: 40px;
+}
+
+.tours-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.tour-card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tour-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.tour-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.tour-info {
+  padding: 20px;
+  text-align: left;
+}
+
+.tour-info h3 {
+  color: #145a32;
+  margin-bottom: 10px;
+}
+
+.tour-description {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.tour-meta {
+  display: flex;
+  justify-content: space-between;
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.tour-price {
+  color: #145a32;
+  font-weight: 600;
+}
+
+.tour-btn {
+  display: inline-block;
+  background: #145a32;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.tour-btn:hover {
+  background: #0e3f27;
+}
+
+/* Hero section on Tours page */
+.tours-hero {
+  height: 50vh;
+  background: url("../assets/images/amboseli-hero.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+}
+
+.tours-hero-overlay {
+  background: rgba(0, 0, 0, 0.55);
+  padding: 40px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.tours-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
