@@ -1,0 +1,133 @@
+.about-page {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Hero */
+.about-hero {
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-hero-overlay {
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  text-align: center;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.about-hero-overlay h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-intro {
+  padding: 60px 20px;
+  text-align: center;
+  background: #fff;
+}
+
+.about-intro h2 {
+  color: #0b3b2e;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.about-intro p {
+  color: #444;
+  max-width: 850px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Mission & Vision */
+.mission-vision {
+  background: #f8f9fa;
+  padding: 60px 20px;
+}
+
+.mission-vision-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.mission-card, .vision-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Core Values */
+.core-values {
+  background: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.core-values h2 {
+  margin-bottom: 40px;
+  color: #0b3b2e;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.value-card {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.value-icon {
+  font-size: 28px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.value-card h4 {
+  color: #145a32;
+  margin-bottom: 10px;
+}
+
+/* CTA */
+.about-cta {
+  background: #145a32;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.about-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.about-btn {
+  background: #f5a623;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.about-btn:hover {
+  background: #ff8c00;
+}
