@@ -1,8 +1,8 @@
 /* Why Choose Us section */
 .why-section {
   padding: 64px 20px;
-  background: #ffffff;
-  color: #1f2937; /* gray-800 */
+  background: #f8f9fa;  /* light grey */
+  color: #1f2937;
 }
 
 .why-section .container {
