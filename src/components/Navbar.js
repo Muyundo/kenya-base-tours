@@ -1,40 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import "./Navbar.css";
 
-const Navbar = () => {
+function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <nav style={styles.nav}>
-      <h2 style={styles.logo}>Kenya Base Tours</h2>
-      <div style={styles.links}>
-        <Link to="/" style={styles.link}>Home</Link>
-        <Link to="/tours" style={styles.link}>Tours</Link>
-        <Link to="/about" style={styles.link}>About</Link>
+    <nav className="navbar">
+      <div className="logo">Kenya Base Tours</div>
+
+      {/* Hamburger menu icon */}
+      <div className="hamburger" onClick={toggleMenu}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      {/* Nav links */}
+      <div className={`nav-links ${isOpen ? "active" : ""}`}>
+        <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
+        <Link to="/about" onClick={() => setIsOpen(false)}>About</Link>
+        <Link to="/tours" onClick={() => setIsOpen(false)}>Tours</Link>
+        <Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
       </div>
     </nav>
   );
-};
-
-const styles = {
-  nav: {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    backgroundColor: "#006400",
-    color: "white",
-    padding: "1rem 2rem",
-  },
-  logo: {
-    margin: 0,
-  },
-  links: {
-    display: "flex",
-    gap: "1.5rem",
-  },
-  link: {
-    color: "white",
-    textDecoration: "none",
-    fontWeight: "bold",
-  },
-};
+}
 
 export default Navbar;
