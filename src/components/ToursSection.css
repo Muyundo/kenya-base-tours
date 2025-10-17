@@ -11,20 +11,28 @@
 }
 
 .tours-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: stretch;
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
+
 .tour-card {
-  background: #fff;
-  border-radius: 15px;
+  background-color: #fff;
+  border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  width: 300px; /* 👈 ensures they fit side by side */
+  text-align: center;
   transition: transform 0.3s ease;
 }
+
+.tour-card:hover {
+  transform: translateY(-5px);
+}
+
 
 .tour-card:hover {
   transform: translateY(-5px);
