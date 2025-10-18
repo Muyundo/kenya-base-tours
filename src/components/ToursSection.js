@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import "./ToursSection.css";
 import masaiMaraImg from "../assets/images/masai-mara.jpg";
 import amboseliImg from "../assets/images/amboseli.jpg";
@@ -21,7 +23,7 @@ function ToursSection() {
             great herds cross the Mara River in one of Africa’s most iconic
             destinations.
           </p>
-          <button>Learn More</button>
+          <Link to={`/destinations/masai-mara`} className="tour-btn">Learn More</Link>
         </div>
 
         {/* Amboseli National Park Card */}
@@ -33,18 +35,20 @@ function ToursSection() {
             Explore the breathtaking views of Mount Kilimanjaro and encounter
             large herds of elephants in the heart of Amboseli.
           </p>
-          <button>Learn More</button>
+          <Link to={`/destinations/amboseli`} className="tour-btn">Learn More</Link>
         </div>
 
         {/* Sweetwaters Safari Card */}
         <div className="tour-card">
-       <img src={sweetwatersImg} alt="Sweetwaters Safari" />
+        <img src={require("../assets/images/samburu.jpg")} alt="Samburu National Reserve" />
 
-        <h3>Sweetwaters Safari</h3>
+          <h3>Samburu Safari</h3>
         <p>
-            Experience the Ol Pejeta Conservancy, home to the last northern white rhinos, chimpanzee sanctuary, and incredible views of Mount Kenya.
+          Discover the raw beauty of Samburu National Reserve, home to rare species such as 
+          the Grevy’s zebra, reticulated giraffe, and Somali ostrich. Experience the serenity 
+          of the Ewaso Nyiro River and the rich culture of the Samburu people.
         </p>
-        <button className="cta-btn">Learn More</button>
+          <Link to={`/destinations/samburu`} className="tour-btn">Learn More</Link>
         </div>
 
 
