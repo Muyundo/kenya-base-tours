@@ -39,8 +39,9 @@ function Footer() {
         <div className="footer-right">
           <nav className="footer-nav" aria-label="Footer navigation">
             <a href="/">Home</a>
-            <a href="/tours">Tours</a>
             <a href="/about">About</a>
+            <a href="/tours">Tours</a>
+            <a href="/destinations"> Destinations</a>            
             <a href="/contact">Contact</a>
           </nav>
           <div className="socials">
