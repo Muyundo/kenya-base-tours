@@ -1,7 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom"; // ✅ import this
 import "./DestinationsSection.css";
 
-// Local images (we’ll add them next)
 import nanyukiImg from "../assets/images/nanyuki.jpg";
 import mountKenyaImg from "../assets/images/mount-kenya.jpg";
 import samburuImg from "../assets/images/samburu.jpg";
@@ -42,6 +42,7 @@ function DestinationsSection() {
   return (
     <section className="destinations-section">
       <h2>Top Destinations in Kenya</h2>
+
       <div className="destinations-grid">
         {destinations.map((place) => (
           <div className="destination-card" key={place.id}>
@@ -52,6 +53,13 @@ function DestinationsSection() {
             </div>
           </div>
         ))}
+      </div>
+
+      {/* ✅ Add this button here */}
+      <div className="destinations-btn-wrapper">
+        <Link to="/destinations" className="destinations-btn">
+          View All Destinations
+        </Link>
       </div>
     </section>
   );

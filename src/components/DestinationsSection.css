@@ -52,3 +52,46 @@
   color: #555;
   line-height: 1.5;
 }
+
+/* === View All Destinations Button === */
+.destinations-btn-wrapper {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.destinations-btn {
+  background-color: #145a32;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1rem;
+  display: inline-block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.destinations-btn:hover {
+  background-color: #0e3f27;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.destinations-btn {
+  animation: fadeUp 0.8s ease forwards;
+}
+
