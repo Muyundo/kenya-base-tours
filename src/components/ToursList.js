@@ -5,7 +5,6 @@ import TourCard from "./TourCard";
 // Local images (you can replace with your own)
 import maraImg from "../assets/images/masai-mara.jpg";
 import amboseliImg from "../assets/images/amboseli.jpg";
-import sweetwatersImg from "../assets/images/sweetwaters.jpg";
 import samburuImg from "../assets/images/samburu.jpg";
 
 function ToursList() {
@@ -13,6 +12,7 @@ function ToursList() {
     {
       id: 1,
       title: "Masai Mara Wildebeest Migration",
+      slug: "masai-mara",
       image: maraImg,
       duration: "3 Days / 2 Nights",
       price: "From $450",
@@ -22,6 +22,7 @@ function ToursList() {
     {
       id: 2,
       title: "Amboseli National Park Adventure",
+      slug: "amboseli",
       image: amboseliImg,
       duration: "2 Days / 1 Night",
       price: "From $300",
@@ -30,16 +31,8 @@ function ToursList() {
     },
     {
       id: 3,
-      title: "Sweetwaters Ol Pejeta Safari",
-      image: sweetwatersImg,
-      duration: "2 Days / 1 Night",
-      price: "From $350",
-      description:
-        "Visit the famous chimpanzee sanctuary and rhino conservancy in this unforgettable highland safari.",
-    },
-    {
-      id: 4,
       title: "Samburu Cultural & Wildlife Tour",
+      slug: "samburu",
       image: samburuImg,
       duration: "3 Days / 2 Nights",
       price: "From $480",

@@ -1,17 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "./TourCard.css";
 
 function TourCard({ tour }) {
   return (
     <div className="tour-card">
       <img src={tour.image} alt={tour.title} />
-      <div className="tour-info">
+      <div className="tour-card-content">
         <h3>{tour.title}</h3>
+        <p className="tour-duration">{tour.duration}</p>
         <p className="tour-description">{tour.description}</p>
-        <div className="tour-meta">
-          <span>{tour.duration}</span>
-          <span className="tour-price">{tour.price}</span>
-        </div>
-        <a href="#" className="tour-btn">View Details</a>
+        <p className="tour-price">{tour.price}</p>
+
+        {/* Link to destination detail */}
+        <Link to={`/destinations/${tour.slug}`} className="tour-btn">
+          View Details
+        </Link>
       </div>
     </div>
   );
