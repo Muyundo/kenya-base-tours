@@ -5,8 +5,10 @@
   overflow: hidden;
   box-shadow: 0 6px 18px rgba(0,0,0,0.06);
   transition: transform .28s ease, box-shadow .28s ease;
-  display:flex;
+  display: flex;
   flex-direction: column;
+  justify-content: space-between; /* ensures content fills evenly */
+  height: 100%; /* equalize card heights */
 }
 
 .dest-card:hover {
@@ -22,10 +24,11 @@
 }
 
 .dest-body {
-  padding:16px;
-  display:flex;
-  flex-direction:column;
-  gap:10px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* separates text and button */
+  flex-grow: 1; /* makes sure it fills remaining space */
 }
 
 .dest-short {
