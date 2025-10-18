@@ -21,12 +21,13 @@ function Navbar() {
       </div>
 
       {/* Nav links */}
-      <div className={`nav-links ${isOpen ? "active" : ""}`}>
-        <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
+     <div className={`nav-links ${isOpen ? "active" : ""}`}>
+      <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
         <Link to="/about" onClick={() => setIsOpen(false)}>About</Link>
-        <Link to="/tours" onClick={() => setIsOpen(false)}>Tours</Link>
-        <Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
-      </div>
+      <Link to="/tours" onClick={() => setIsOpen(false)}>Tours</Link>
+      <Link to="/destinations" onClick={() => setIsOpen(false)}>Destinations</Link>  
+      <Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
+    </div>
     </nav>
   );
 }

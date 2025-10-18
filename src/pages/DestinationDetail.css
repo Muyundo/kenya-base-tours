@@ -1,0 +1,50 @@
+/* Destination detail styles */
+.detail-hero {
+  height:45vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.detail-overlay {
+  background: rgba(0,0,0,0.42);
+  color:#fff;
+  padding:28px;
+  border-radius:8px;
+  text-align:center;
+}
+
+.section { padding: 28px 20px; }
+
+.detail-grid {
+  display:grid;
+  grid-template-columns: 1fr 320px;
+  gap:24px;
+  align-items:start;
+}
+
+.detail-main h2 { color:#145a32; }
+.detail-main ul { padding-left:18px; }
+
+.detail-aside .box {
+  background:#fff;
+  padding:16px;
+  border-radius:10px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.06);
+  margin-bottom:16px;
+}
+
+.btn {
+  display:inline-block;
+  padding:10px 14px;
+  background:#145a32;
+  color:#fff;
+  border-radius:8px;
+  text-decoration:none;
+}
+@media (max-width:900px) {
+  .detail-grid { grid-template-columns: 1fr; }
+}

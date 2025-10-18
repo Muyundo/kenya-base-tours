@@ -1,0 +1,28 @@
+/* Destinations page styles */
+.dest-hero {
+  height:40vh;
+  background: url("/src/assets/images/masai-mara.jpg") center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.dest-hero-inner {
+  background: rgba(0,0,0,0.45);
+  color:#fff;
+  padding:28px;
+  border-radius:8px;
+  text-align:center;
+}
+
+.dest-list.section {
+  padding:48px 20px;
+}
+
+.container { max-width:1100px; margin:0 auto; }
+
+.grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap:20px;
+}

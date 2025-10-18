@@ -1,5 +1,5 @@
 import React from "react";
-import "./PageStyles.css"; // optional, if you want to reuse some page styles
+//import "./PageStyles.css"; // optional, if you want to reuse some page styles
 
 function Contact() {
   return (
