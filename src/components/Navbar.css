@@ -68,3 +68,25 @@
     display: flex;
   }
 }
+
+
+/* Logo Image */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 100px; /* adjust depending on your navbar height */
+  width: auto;
+  object-fit: contain;
+  filter: brightness(100%) contrast(100%);
+}
+
+/* On smaller screens, make the logo smaller */
+@media (max-width: 768px) {
+  .logo-img {
+    height: 80px;
+  }
+}
+
