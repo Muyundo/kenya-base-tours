@@ -35,6 +35,8 @@ function Hero() {
         <Link to="/tours" className="hero-btn">
           Explore Our Tours
         </Link>
+          <div className="scroll-down"></div> 
+
       </div>
     </section>
   );
