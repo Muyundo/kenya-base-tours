@@ -1,42 +1,52 @@
+// src/components/Hero.js
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Hero.css";
-import heroImage from "../assets/images/hero.jpg";
+
+
+import hero1 from "../assets/images/masai-mara.jpg"; 
+import hero2 from "../assets/images/amboseli.jpg"; 
+import hero3 from "../assets/images/hero3.jpg"; 
 
 function Hero() {
-  const messages = [
-    "Experience the Magic of Kenya",
-    "Witness the Great Migration",
-    "Relax on the Indian Ocean Coast",
-    "Explore Kenya’s Hidden Highlands",
+  const slides = [
+    {
+      image: hero1,
+      title: "Experience the Magic of Masai Mara",
+      text: "Witness the Great Migration and the heart of Kenya’s wildlife.",
+    },
+    {
+      image: hero2,
+      title: "Adventure in Amboseli National Park",
+      text: "Explore elephants and breathtaking views of Mount Kilimanjaro.",
+    },
+    {
+      image: hero3,
+      title: "Relax on the Indian Ocean Coast",
+      text: "White sandy beaches, turquoise waters, and Swahili charm await.",
+    },
   ];
 
-  const [currentMessage, setCurrentMessage] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentMessage((prev) => (prev + 1) % messages.length);
-    }, 4000);
-    return () => clearInterval(interval);
-  }, [messages.length]);
+    const slideInterval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 6000); // 6 seconds per slide
+    return () => clearInterval(slideInterval);
+  }, [slides.length]);
 
   return (
     <section
-      className="hero"
-      style={{
-        backgroundImage: `url(${heroImage})`,
-      }}
+      className="hero hero-slideshow"
+      style={{ backgroundImage: `url(${slides[currentSlide].image})` }}
     >
-      <div className="hero-overlay">
-        <h1 key={currentMessage} className="hero-heading fade-text">
-          {messages[currentMessage]}
-        </h1>
-        <p>Unforgettable tours and safaris in the heart of Africa.</p>
+      <div className="hero-overlay fade-in">
+        <h1>{slides[currentSlide].title}</h1>
+        <p>{slides[currentSlide].text}</p>
         <Link to="/tours" className="hero-btn">
           Explore Our Tours
         </Link>
-          <div className="scroll-down"></div> 
-
       </div>
     </section>
   );
