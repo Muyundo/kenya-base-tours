@@ -1,14 +1,22 @@
+
 .navbar {
-  background-color: #006400; /* dark green */
+  background-color: #006400;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 4% !important;
   position: sticky;
   top: 0;
-  z-index: 10;
+  left: 0;
+  z-index: 100;
+  box-sizing: border-box;
+ 
+  width: 100vw !important;
+ 
 }
+
+
 
 /* Logo */
 .logo {

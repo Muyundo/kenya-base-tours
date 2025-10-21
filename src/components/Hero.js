@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Hero.css";
 
-
 import hero1 from "../assets/images/masai-mara.jpg"; 
 import hero2 from "../assets/images/amboseli.jpg"; 
 import hero3 from "../assets/images/hero3.jpg"; 
@@ -28,20 +27,25 @@ function Hero() {
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [fade, setFade] = useState(true);
 
   useEffect(() => {
-    const slideInterval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 6000); // 6 seconds per slide
-    return () => clearInterval(slideInterval);
+    const interval = setInterval(() => {
+      setFade(false); // fade out current
+      setTimeout(() => {
+        setCurrentSlide((prev) => (prev + 1) % slides.length);
+        setFade(true); // fade in new
+      }, 600); // time matches CSS fade duration
+    }, 6000);
+    return () => clearInterval(interval);
   }, [slides.length]);
 
   return (
     <section
-      className="hero hero-slideshow"
+      className={`hero hero-slideshow ${fade ? "fade-in" : "fade-out"}`}
       style={{ backgroundImage: `url(${slides[currentSlide].image})` }}
     >
-      <div className="hero-overlay fade-in">
+      <div className="hero-overlay animate-text">
         <h1>{slides[currentSlide].title}</h1>
         <p>{slides[currentSlide].text}</p>
         <Link to="/tours" className="hero-btn">

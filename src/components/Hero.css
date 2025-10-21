@@ -1,3 +1,4 @@
+
 .hero {
   height: 80vh;
   background-size: cover;
@@ -7,10 +8,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-image 1s ease-in-out; /* Smooth crossfade */
+  transition: background-image 1s ease-in-out;
   overflow: hidden;
 }
 
+.hero.fade-in {
+  animation: zoomIn 6s ease-in-out forwards;
+}
+
+.hero.fade-out {
+  animation: zoomOut 6s ease-in-out forwards;
+}
+
+/* Overlay content */
 .hero-overlay {
   background: rgba(0, 0, 0, 0.45);
   color: #fff;
@@ -18,11 +28,18 @@
   padding: 20px 30px;
   border-radius: 10px;
   max-width: 700px;
+  opacity: 0;
+  transform: translateY(20px);
   animation: fadeInText 1s ease forwards;
 }
 
+.hero-overlay.animate-text {
+  animation: slideInText 1.2s ease forwards;
+}
+
+/* Headline and paragraph */
 .hero-overlay h1 {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   margin-bottom: 10px;
 }
 
@@ -30,6 +47,7 @@
   font-size: 1.1rem;
 }
 
+/* Button styling */
 .hero-btn {
   margin-top: 16px;
   background: #2e8b57;
@@ -39,14 +57,33 @@
   border-radius: 8px;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .hero-btn:hover {
   background: #246b45;
+  transform: translateY(-3px);
 }
 
-/* Fade animation for text */
+/* --- Animations --- */
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.08);
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    transform: scale(1.08);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
 @keyframes fadeInText {
   from {
     opacity: 0;
@@ -58,6 +95,13 @@
   }
 }
 
-.fade-in {
-  animation: fadeInText 1s ease;
+@keyframes slideInText {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
