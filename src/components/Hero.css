@@ -1,4 +1,3 @@
-
 .hero {
   height: 80vh;
   background-size: cover;
@@ -25,9 +24,17 @@
   background: rgba(0, 0, 0, 0.45);
   color: #fff;
   text-align: center;
-  padding: 20px 30px;
-  border-radius: 10px;
+  padding: 40px 30px;
+  border-radius: 12px;
   max-width: 700px;
+
+  /* Center content & fix overlap */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem; /* Adds spacing between text and button */
+
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInText 1s ease forwards;
@@ -39,30 +46,34 @@
 
 /* Headline and paragraph */
 .hero-overlay h1 {
-  font-size: 2.6rem;
-  margin-bottom: 10px;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.3;
 }
 
 .hero-overlay p {
   font-size: 1.1rem;
+  margin: 0;
+  color: #f1f1f1;
 }
 
 /* Button styling */
 .hero-btn {
-  margin-top: 16px;
   background: #2e8b57;
   color: #fff;
-  padding: 12px 24px;
+  padding: 12px 26px;
   border: none;
   border-radius: 8px;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.3s ease, transform 0.3s ease;
+  transition: all 0.3s ease;
+  font-size: 1rem;
 }
 
 .hero-btn:hover {
   background: #246b45;
-  transform: translateY(-3px);
+  transform: scale(1.05);
 }
 
 /* --- Animations --- */

@@ -1,0 +1,36 @@
+/* ==== GLOBAL RESET AND STABILIZATION ==== */
+
+/* Reset default browser paddings & margins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Prevent horizontal scroll site-wide */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Ensure images & sections never exceed viewport */
+img,
+section,
+div {
+  max-width: 100%;
+}
+
+/* Base typography and background */
+body {
+  font-family: 'Poppins', 'Roboto', sans-serif;
+  background-color: #fff;
+  color: #222;
+}
+
+/* Remove focus outlines from buttons/links (optional) */
+button,
+a {
+  outline: none;
+}
