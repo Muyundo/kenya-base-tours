@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom"; // ✅ import this
+import { Link } from "react-router-dom";
 import "./DestinationsSection.css";
 
 import nanyukiImg from "../assets/images/nanyuki.jpg";
@@ -53,13 +53,13 @@ function DestinationsSection() {
             </div>
           </div>
         ))}
-      </div>
 
-      {/* ✅ Add this button here */}
-      <div className="destinations-btn-wrapper">
-        <Link to="/destinations" className="destinations-btn">
-          View All Destinations
-        </Link>
+        {/* ✅ Make this part of the grid */}
+        <div className="destination-card view-more-card">
+          <Link to="/destinations" className="destinations-btn-inline">
+            View All Destinations →
+          </Link>
+        </div>
       </div>
     </section>
   );
