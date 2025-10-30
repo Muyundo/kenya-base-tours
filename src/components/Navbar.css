@@ -1,4 +1,40 @@
 
+/* === Top Contact Bar === */
+.top-bar {
+  background-color: #0e3f27; /* darker green for contrast */
+  color: white;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+  width: 100%;
+}
+
+.top-bar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.top-bar a:hover {
+  text-decoration: underline;
+}
+
+.top-bar p {
+  margin: 0;
+  font-weight: 500;
+}
+
+
+/* Hide on very small screens */
+@media (max-width: 500px) {
+  .top-bar {
+    font-size: 0.8rem;
+    padding: 4px 0;
+  }
+}
+
+
 .navbar {
   background-color: #006400;
   color: white;
