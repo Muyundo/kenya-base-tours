@@ -12,8 +12,8 @@ const destinations = [
     name: "Masai Mara",
     short: "World-famous reserve known for the Great Wildebeest Migration and abundant big cats.",
     image: maraImg,
-    bestMonths: "July - October",
-    highlights: ["Great Migration", "Big Cats", "River Crossings", "Balloon Safaris"],
+    bestMonths: "July - October - Great Wildebeest Migration",
+    highlights: ["Great Migration", "Big Five", "River Crossings", "Balloon Safaris"],
     detail: `Masai Mara National Reserve is Kenya’s most famous park — a vast savannah home to large populations of lions, cheetahs, elephants and the annual wildebeest migration. Expect thrilling predator-prey action and classic African panoramas.`
   },
   {
@@ -21,7 +21,7 @@ const destinations = [
     name: "Amboseli",
     short: "Iconic views of Kilimanjaro and large elephant herds in open plains.",
     image: amboseliImg,
-    bestMonths: "June - October",
+    bestMonths: "All year.",
     highlights: ["Mount Kilimanjaro views", "Elephant herds", "Birdwatching"],
     detail: `Amboseli National Park offers spectacular views of Mount Kilimanjaro and a high chance of close elephant sightings. It’s ideal for photographers and first-time safari-goers.`
   },
@@ -48,7 +48,7 @@ const destinations = [
     name: "Samburu",
     short: "Northern Kenya with unique species and vivid cultural experiences.",
     image: samburuImg,
-    bestMonths: "June - October",
+    bestMonths: "Throughout the year.",
     highlights: ["Reticulated giraffe", "Grevy's zebra", "Samburu culture"],
     detail: `Samburu National Reserve showcases species not commonly found in the south and offers intimate cultural experiences with Samburu communities.`
   },
