@@ -10,7 +10,7 @@ function TourCard({ tour }) {
         <h3>{tour.title}</h3>
         <p className="tour-duration">{tour.duration}</p>
         <p className="tour-description">{tour.description}</p>
-        <p className="tour-price">{tour.price}</p>
+        {/* <p className="tour-price">{tour.price}</p> */}
 
         {/* Link to destination detail */}
         <Link to={`/destinations/${tour.slug}`} className="tour-btn">
