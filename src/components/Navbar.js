@@ -35,7 +35,13 @@ function Navbar() {
           <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
           <Link to="/about" onClick={() => setIsOpen(false)}>About</Link>
           <Link to="/tours" onClick={() => setIsOpen(false)}>Tours</Link>
-          <Link to="/destinations" onClick={() => setIsOpen(false)}>Destinations</Link>
+          <div className="nav-dropdown">
+            <span className="nav-dropdown-label">Destinations ▾</span>
+            <div className="nav-dropdown-content">
+              <Link to="/destinations" onClick={() => setIsOpen(false)}>Kenya</Link>
+              <Link to="/tanzania-destinations" onClick={() => setIsOpen(false)}>Tanzania</Link>
+            </div>
+          </div>
           <Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
         </div>
       </nav>

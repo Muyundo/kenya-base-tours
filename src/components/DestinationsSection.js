@@ -1,62 +1,26 @@
+
+
 import React from "react";
 import { Link } from "react-router-dom";
+import destinationsData from "../data/destinations";
 import "./DestinationsSection.css";
 
-import nanyukiImg from "../assets/images/nanyuki.jpg";
-import mountKenyaImg from "../assets/images/mount-kenya.jpg";
-import samburuImg from "../assets/images/samburu.jpg";
-import coastImg from "../assets/images/coast.jpg";
-
 function DestinationsSection() {
-  const destinations = [
-    {
-      id: 1,
-      name: "Nanyuki",
-      image: nanyukiImg,
-      description:
-        "A charming town on the equator, gateway to Mount Kenya, known for its wildlife conservancies and scenic highlands.",
-    },
-    {
-      id: 2,
-      name: "Mount Kenya",
-      image: mountKenyaImg,
-      description:
-        "Kenya’s highest peak and Africa’s second tallest mountain — ideal for climbers, hikers, and nature lovers.",
-    },
-    {
-      id: 3,
-      name: "Samburu",
-      image: samburuImg,
-      description:
-        "An authentic northern Kenya experience — unique wildlife, stunning landscapes, and vibrant Samburu culture.",
-    },
-    {
-      id: 4,
-      name: "Kenya Coast",
-      image: coastImg,
-      description:
-        "White sandy beaches, turquoise waters, and Swahili culture await you in Diani, Watamu, and Malindi.",
-    },
-  ];
-
+  const topDestinations = destinationsData.slice(0, 6);
   return (
     <section className="destinations-section">
-      <h2>Top Destinations in Kenya</h2>
-
-      <div className="destinations-grid">
-        {destinations.map((place) => (
-          <div className="destination-card" key={place.id}>
+      <h2>Top Destinations</h2>
+      <div className="tours-container">
+        {topDestinations.map((place) => (
+          <div className="tour-card" key={place.id}>
             <img src={place.image} alt={place.name} />
-            <div className="destination-info">
-              <h3>{place.name}</h3>
-              <p>{place.description}</p>
-            </div>
+            <h3>{place.name}</h3>
+            <p>{place.short}</p>
+            <Link to={`/destinations/${place.id}`} className="tour-btn">Learn More</Link>
           </div>
         ))}
-
-        {/* ✅ Make this part of the grid */}
-        <div className="destination-card view-more-card">
-          <Link to="/destinations" className="destinations-btn-inline">
+        <div className="tour-card view-more-card">
+          <Link to="/destinations" className="tour-btn">
             View All Destinations →
           </Link>
         </div>

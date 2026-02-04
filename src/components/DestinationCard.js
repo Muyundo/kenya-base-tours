@@ -5,18 +5,17 @@ import "./DestinationCard.css";
 
 export default function DestinationCard({ place }) {
   return (
-    <article className="dest-card">
-      <div className="dest-media">
-        <img src={place.image} alt={place.name} />
-      </div>
-      <div className="dest-body">
+    <div className="destination-card">
+      <img src={place.image} alt={place.name} />
+      <div className="tour-card-content">
         <h3>{place.name}</h3>
-        <p className="dest-short">{place.short}</p>
-        <div className="dest-meta">
-          <span>Best: {place.bestMonths}</span>
-          <Link to={`/destinations/${place.id}`} className="dest-link">Read more →</Link>
-        </div>
+        {place.bestMonths && <p className="tour-duration">Best: {place.bestMonths}</p>}
+        <p className="tour-description">{place.short}</p>
+        {/* Optionally add price or other info here if available */}
+        <Link to={`/destinations/${place.id}`} className="tour-btn">
+          Read more →
+        </Link>
       </div>
-    </article>
+    </div>
   );
 }

@@ -1,3 +1,64 @@
+/* === Dropdown for Destinations === */
+.nav-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-dropdown-label {
+  cursor: pointer;
+  padding: 0 16px;
+  color: #fff;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-dropdown-label:hover,
+.nav-dropdown:hover .nav-dropdown-label {
+  background: #145a32;
+}
+
+.nav-dropdown-content {
+  display: none;
+  position: absolute;
+  background: #fff;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+  z-index: 100;
+  right: 0;
+  border-radius: 0 0 8px 8px;
+  overflow: hidden;
+}
+
+.nav-dropdown-content a {
+  color: #111 !important;
+  padding: 12px 18px;
+  text-decoration: none;
+  display: block;
+  font-weight: 500;
+  background: #fff;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-dropdown-content a:hover {
+  background: #eafaf1;
+  color: #0e3f27;
+}
+
+.nav-dropdown:hover .nav-dropdown-content {
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .nav-dropdown-content {
+    position: static;
+    box-shadow: none;
+    min-width: 0;
+    border-radius: 0;
+  }
+  .nav-dropdown-label {
+    padding: 0;
+  }
+}
 
 /* === Top Contact Bar === */
 .top-bar {
@@ -62,15 +123,13 @@
 }
 
 /* Menu links */
-.nav-links {
-  display: flex;
-  gap: 2rem;
-}
-
 .nav-links a {
-  color: white;
+  color: #fff;
   text-decoration: none;
-  font-weight: 500;
+  margin: 0 12px;
+  font-size: 1.08rem;
+  transition: color 0.2s;
+  font-weight: 600;
 }
 
 .nav-links a:hover {

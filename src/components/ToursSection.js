@@ -2,9 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import "./ToursSection.css";
+
 import masaiMaraImg from "../assets/images/masai-mara.jpg";
 import amboseliImg from "../assets/images/amboseli.jpg";
 import sweetwatersImg from "../assets/images/sweetwaters.jpg";
+import coastImg from "../assets/images/coast.jpg";
 
 
 function ToursSection() {
@@ -26,6 +28,16 @@ function ToursSection() {
           <Link to={`/destinations/masai-mara`} className="tour-btn">Learn More</Link>
         </div>
 
+
+          {/* Kenya Coast (Diani/Watamu) Card */}
+          <div className="tour-card">
+            <img src={coastImg} alt="Kenya Coast (Diani/Watamu)" />
+            <h3>Kenya Coast (Diani/Watamu)</h3>
+            <p>
+              Relax on white sandy beaches, swim in turquoise waters, and immerse yourself in Swahili culture in Diani, Watamu, and Malindi. Perfect for a tropical getaway.
+            </p>
+            <Link to="/destinations/kenya-coast" className="tour-btn">Learn More</Link>
+          </div>
         {/* Amboseli National Park Card */}
         <div className="tour-card">
         <img src={amboseliImg} alt="Amboseli National Park" />
