@@ -17,6 +17,7 @@ function Tours() {
 
       {/* Tours Listing Section */}
       <ToursList />
+        {/* <p className="tour-price">Price: {tour.price}</p> */}
     </div>
   );
 }
