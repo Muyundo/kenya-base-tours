@@ -16,7 +16,18 @@ import About from "./pages/About";
 import Tours from "./pages/Tours";
 import Contact from "./pages/Contact";
 import Destinations from "./pages/Destinations";
+import MasaiMara from "./pages/MasaiMara";
+import Amboseli from "./pages/Amboseli";
+import LakeNakuru from "./pages/LakeNakuru";
+import Samburu from "./pages/Samburu";
+import Coast from "./pages/Coast";
+import NorthCoast from "./pages/NorthCoast";
+import Nanyuki from "./pages/Nanyuki";
 import DestinationDetail from "./pages/DestinationDetail";
+import TanzaniaDestinations from "./pages/TanzaniaDestinations";
+import Serengeti from "./pages/Serengeti";
+import Tarangire from "./pages/Tarangire";
+import LakeManyara from "./pages/LakeManyara";
 
 // 👇 Create a wrapper so we can use useLocation()
 function AppContent() {
@@ -41,7 +52,19 @@ function AppContent() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/destinations" element={<Destinations />} />
+          <Route path="/destinations/masai-mara" element={<MasaiMara />} />
+          <Route path="/destinations/amboseli" element={<Amboseli />} />
+          <Route path="/destinations/lake-nakuru" element={<LakeNakuru />} />
+          <Route path="/destinations/samburu" element={<Samburu />} />
+          <Route path="/destinations/coast" element={<Coast />} />
+          <Route path="/destinations/north-coast" element={<NorthCoast />} />
+          <Route path="/destinations/nanyuki" element={<Nanyuki />} />
           <Route path="/destinations/:slug" element={<DestinationDetail />} />
+          <Route path="/tanzania-destinations" element={<TanzaniaDestinations />} />
+          <Route path="/tanzania-destinations/serengeti" element={<Serengeti />} />
+          <Route path="/tanzania-destinations/tarangire" element={<Tarangire />} />
+          <Route path="/tanzania-destinations/lake-manyara" element={<LakeManyara />} />
+          <Route path="/destinations/tanzania-destinations" element={<TanzaniaDestinations />} />
         </Routes>
       </main>
 
