@@ -5,7 +5,7 @@ import "./ToursSection.css";
 
 import masaiMaraImg from "../assets/images/masai-mara.jpg";
 import amboseliImg from "../assets/images/amboseli.jpg";
-import sweetwatersImg from "../assets/images/sweetwaters.jpg";
+
 import coastImg from "../assets/images/coast.jpg";
 
 

@@ -45,8 +45,8 @@ function Footer() {
             <a href="/contact">Contact</a>
           </nav>
           <div className="socials">
-            <a href="#" aria-label="Follow on Facebook">Facebook</a>
-            <a href="#" aria-label="Follow on Instagram">Instagram</a>
+            <a href="https://facebook.com/kenyabasetours" target="_blank" rel="noopener noreferrer" aria-label="Follow on Facebook">Facebook</a>
+            <a href="https://instagram.com/kenyabasetours" target="_blank" rel="noopener noreferrer" aria-label="Follow on Instagram">Instagram</a>
           </div>
         </div>
       </div>

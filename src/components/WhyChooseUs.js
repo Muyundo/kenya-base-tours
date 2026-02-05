@@ -38,7 +38,7 @@ export default function WhyChooseUs() {
           unforgettable experiences.
         </p>
 
-        <ul className="why-grid" role="list">
+        <ul className="why-grid">
           {reasons.map((r) => (
             <li key={r.id} className="why-card">
               <div className="why-icon" aria-hidden="true">{r.emoji}</div>
