@@ -35,6 +35,7 @@ function Navbar() {
           <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
           <Link to="/about" onClick={() => setIsOpen(false)}>About</Link>
           <Link to="/tours" onClick={() => setIsOpen(false)}>Tours</Link>
+          <Link to="/transport-services" onClick={() => setIsOpen(false)}>Transport services</Link>
           <div className="nav-dropdown">
             <span className="nav-dropdown-label">Destinations ▾</span>
             <div className="nav-dropdown-content">
