@@ -28,6 +28,7 @@ import TanzaniaDestinations from "./pages/TanzaniaDestinations";
 import Serengeti from "./pages/Serengeti";
 import Tarangire from "./pages/Tarangire";
 import LakeManyara from "./pages/LakeManyara";
+import TransportServices from "./pages/TransportServices";
 
 // 👇 Create a wrapper so we can use useLocation()
 function AppContent() {
@@ -65,6 +66,7 @@ function AppContent() {
           <Route path="/tanzania-destinations/tarangire" element={<Tarangire />} />
           <Route path="/tanzania-destinations/lake-manyara" element={<LakeManyara />} />
           <Route path="/destinations/tanzania-destinations" element={<TanzaniaDestinations />} />
+            <Route path="/transport-services" element={<TransportServices />} />
         </Routes>
       </main>
 
