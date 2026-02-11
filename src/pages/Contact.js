@@ -82,7 +82,7 @@ function Contact() {
             </p>
             <ul>
               <li><strong>📍 Address:</strong> Nairobi, Kenya</li>
-              <li><strong>📞 Phone:</strong> +254 115 668 995 | +254 214 195 24</li>
+              <li><strong>📞 Phone:</strong> +254 115 668 995 | +254 721 419 524</li>
               <li><strong>✉️ Email:</strong> info@kenyabasetours.com</li>
               <li><strong>⏰ Office Hours:</strong> Mon – Sat, 8:00am – 6:00pm</li>
             </ul>
