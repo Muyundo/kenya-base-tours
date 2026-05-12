@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import serengetiImg from "../assets/images/serengeti.jpg";
+import amboseliImg from "../assets/images/amboseli.jpg";
 
 export default function TanzaniaDestinations() {
   return (
@@ -24,7 +25,7 @@ export default function TanzaniaDestinations() {
               <Link to="/tanzania-destinations/serengeti" className="tour-btn">Read more →</Link>
             </div>
             <div className="tour-card">
-              <img src={require("../assets/images/amboseli.jpg")} alt="Tarangire National Park" />
+              <img src={amboseliImg} alt="Tarangire National Park" />
               <h3>Tarangire National Park</h3>
               <p>
                 Famous for its elephant herds, ancient baobab trees, and the life-giving Tarangire River. A haven for birders and wildlife lovers alike.
@@ -32,7 +33,7 @@ export default function TanzaniaDestinations() {
               <Link to="/tanzania-destinations/tarangire" className="tour-btn">Read more →</Link>
             </div>
             <div className="tour-card">
-              <img src={require("../assets/images/amboseli.jpg")} alt="Lake Manyara National Park" />
+              <img src={amboseliImg} alt="Lake Manyara National Park" />
               <h3>Lake Manyara National Park</h3>
               <p>
                 Famous for its tree-climbing lions, flamingos, and diverse landscapes. A compact park with dramatic scenery and unique wildlife encounters.

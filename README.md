@@ -34,9 +34,9 @@ Kenya Base Tours is a web application for exploring and booking tours in Kenya a
 
 ### Running the Application
 ```bash
-npm start
+npm run dev
 ```
-The app will run locally at `http://localhost:3000`.
+The app will run locally at `http://localhost:5173`.
 
 ## Project Structure
 - `src/` - Source code

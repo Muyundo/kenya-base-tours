@@ -7,6 +7,7 @@ import masaiMaraImg from "../assets/images/masai-mara.jpg";
 import amboseliImg from "../assets/images/amboseli.jpg";
 
 import coastImg from "../assets/images/coast.jpg";
+import samburuImg from "../assets/images/samburu.jpg";
 
 
 function ToursSection() {
@@ -52,7 +53,7 @@ function ToursSection() {
 
         {/* Sweetwaters Safari Card */}
         <div className="tour-card">
-        <img src={require("../assets/images/samburu.jpg")} alt="Samburu National Reserve" />
+        <img src={samburuImg} alt="Samburu National Reserve" />
 
           <h3>Samburu Safari</h3>
         <p>

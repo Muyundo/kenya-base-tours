@@ -5,13 +5,14 @@ import lakeNakuruImg from "../assets/images/lake-nakuru.jpg";
 import mountKenyaImg from "../assets/images/mount-kenya.jpg";
 import samburuImg from "../assets/images/samburu.jpg";
 import coastImg from "../assets/images/coast.jpg";
+import nanyukiImg from "../assets/images/nanyuki.jpg";
 
 const destinations = [
     {
       id: "nanyuki",
       name: "Nanyuki",
       short: "A charming town on the equator, gateway to Mount Kenya, known for its wildlife conservancies and scenic highlands.",
-      image: require("../assets/images/nanyuki.jpg"),
+      image: nanyukiImg,
       bestMonths: "All year",
       highlights: [
         "Rhino Sanctuary",
