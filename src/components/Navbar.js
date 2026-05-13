@@ -12,7 +12,7 @@ function Navbar() {
       {/* ✅ Top Info Bar */}
       <div className="top-bar">
         <p>
-          📞 <a href="tel:+254 115 668 995">+254 115 668 995 | +254 721 419 524</a> &nbsp; | &nbsp;
+          📞 <a href="tel:+254 115 668 995"> +254 721 419 524 | +254 115 668 995 </a> &nbsp; | &nbsp;
           📧 <a href="mailto:info@kenyabasetours.com">info@kenyabasetours.com</a>
         </p>
       </div>
