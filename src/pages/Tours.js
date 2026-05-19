@@ -8,7 +8,7 @@ function Tours() {
       {/* Hero Section */}
       <section className="tours-hero">
         <div className="tours-hero-overlay">
-          <h1>Our Tours & Safaris</h1>
+          <h1>Our Services</h1>
           <p>
             Explore Kenya’s breathtaking landscapes, wildlife, and culture through our expertly curated tour packages.
           </p>
