@@ -60,7 +60,7 @@ export default function Serengeti() {
               </ul>
             </div>
             <div className="box">
-              <h4>Want to visit?</h4>
+              <h4>Plan a Trip</h4>
               <a href="/contact" className="btn">Request a Quote</a>
             </div>
           </aside>

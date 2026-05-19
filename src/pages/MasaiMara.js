@@ -36,7 +36,7 @@ export default function MasaiMara() {
               <p>Large populations of lions, cheetahs, elephants. Annual wildebeest migration.</p>
             </div>
             <div className="box">
-              <h4>Want to visit?</h4>
+              <h4>Plan a Trip</h4>
               <Link to="/contact" className="btn">Request a Quote</Link>
             </div>
           </aside>

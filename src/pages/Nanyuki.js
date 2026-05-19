@@ -25,6 +25,7 @@ export default function Nanyuki() {
               <li>Mount Kenya National Park</li>
               <li>Equator Marker</li>
               <li>Ol Pejeta Conservancy</li>
+              <li>Sweet Waters</li>
               <li>Scenic Highlands</li>
               <li>Wildlife Safaris</li>
               <li>Horse Riding</li>
@@ -57,7 +58,7 @@ export default function Nanyuki() {
               <p>Located on the equator, gateway to Mount Kenya, home to Ol Pejeta Conservancy and rhino sanctuary, adventure activities, and rich local culture.</p>
             </div>
             <div className="box">
-              <h4>Want to visit?</h4>
+              <h4>Plan a Trip</h4>
               <Link to="/contact" className="btn">Request a Quote</Link>
             </div>
           </aside>

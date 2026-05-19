@@ -35,7 +35,7 @@ export default function Amboseli() {
               <p>Iconic views, large elephant herds, open plains, birdwatching.</p>
             </div>
             <div className="box">
-              <h4>Want to visit?</h4>
+              <h4>Plan a Trip</h4>
               <Link to="/contact" className="btn">Request a Quote</Link>
             </div>
           </aside>
