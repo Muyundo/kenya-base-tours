@@ -82,6 +82,16 @@
   background: #0e3f27;
 }
 
+.view-more-card {
+  grid-column: 1 / -1;
+  max-width: 320px;
+  margin: 0 auto;
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Hero section on Tours page */
 .tours-hero {
   height: 50vh;

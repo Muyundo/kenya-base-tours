@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./ToursList.css";
 import TourCard from "./TourCard";
 
@@ -49,6 +50,11 @@ function ToursList() {
           {tours.map((tour) => (
             <TourCard key={tour.id} tour={tour} />
           ))}
+          <div className="tour-card view-more-card">
+            <Link to="/destinations" className="tour-btn">
+              View All Destinations →
+            </Link>
+          </div>
         </div>
       </div>
     </section>
